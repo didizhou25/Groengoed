@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: rgb(255, 255, 255)
+}
+#showcase{
+    font-size: 40px;
+    background-image:url('../img/Header1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase h1{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+#showcase p{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#showcase .button{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    border: #ffffff 1px solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+#section-a{
+    padding: 50px;
+    font-size: 30px;
+    display: flex;
+    background-image: linear-gradient(#009640, rgb(255, 255, 255));
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#section-a p{
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #ffffff
+}
+
+#section-b{
+    color: #009640;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+    text-align: center;
+}
+
+#section-b p{
+    font-size: 20px;
+    color: #009640;
+}
+
+#section-b h2{
+    color: #009640;
+}
+
+#section-c{
+    display: flex;
+}
+
+#section-c .box1{
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 49vw;
+    padding-top: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vw;
+    width: 40vw;
+    height: 40vw;
+    background-color: #009640;
+}    
+
+#section-c .box2{
+    font-size: 30px;
+    color: #009640;
+    padding-left: 8vw;
+    padding-top: 3vw;
+    padding-right: 50vw;
+    padding-bottom: 8vw;
+    width: 70vw;
+    height: 40vw;
+    background-color: #ffffff;
+}
+
+#section-c .box3{
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 50vw;
+    padding-top: 4vw;
+    padding-right: 10vw;
+    padding-bottom: 7vw;
+    width: 40vw;
+    height: 40vw;
+    background-color: #009640;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+.card {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: relative;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    align-items: baseline;
+    border-radius: 50px; /* 5px rounded corners */
+}
+
+#section-d {
+    display: flex;  
+    width: 100%;
+    margin-right: 3em;
+    text-align: center;    
+}
+
+.box {
+    width: 25%;
+   display: flex;
+   flex-direction: column;
+}
+
+.card-image img {
+    padding-top: 10px;
+    width: 20em;
+    height: 20em;
+    border-radius: 40px;
+}
+
+.footer {
+    position: static;
+    text-align: left;
+    background-color: #ffffff;
+    color: #009640;
+ }
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main;}
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  padding: 0px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item2{
+    padding-left: 20vw;
+    padding-right: 0%;
+    font-size: 40px;
+    text-align: center;
+}
+.item3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.item5{
+    font-size: 16px;
+}
+
+ @media only screen and (max-width: 600px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        
+    }
+    .card-body{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-body p{
+        display: flex;
+        flex-direction: column;
+        /* background: red; */
+        justify-content: flex-start;
+    }
+ } 
